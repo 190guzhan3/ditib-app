@@ -1,0 +1,415 @@
+{
+  "@@locale": "de",
+  "app_title": "Cemaat",
+  "nav_home": "Start",
+  "nav_mosques": "Moscheen",
+  "nav_community": "Community",
+  "common_cancel": "Abbrechen",
+  "common_delete": "Löschen",
+  "common_save": "Speichern",
+  "common_close": "Schließen",
+  "common_continue": "Weiter",
+  "common_skip": "Überspringen",
+  "common_show_all": "Alle anzeigen",
+  "common_loading_please_wait": "Einen Moment bitte …",
+  "common_internet_required": "Dafür wird eine Internetverbindung benötigt.",
+  "common_irreversible": "Das kann nicht rückgängig gemacht werden.",
+  "image_change": "Bild ändern",
+  "image_choose": "Bild wählen",
+  "image_view": "Bild ansehen",
+  "image_remove": "Bild entfernen",
+  "tooltip_qibla": "Qibla-Kompass",
+  "tooltip_settings": "Einstellungen",
+  "date_today": "Heute",
+  "date_tomorrow": "Morgen",
+  "ago_now": "gerade eben",
+  "ago_minutes": "vor {n} Min.",
+  "@ago_minutes": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "ago_hours": "vor {n} Std.",
+  "@ago_hours": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "ago_days": "{n, plural, =1{vor 1 Tag} other{vor {n} Tagen}}",
+  "@ago_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "duration_hm": "{h} Std. {m} Min.",
+  "@duration_hm": {
+    "placeholders": {
+      "h": {
+        "type": "int"
+      },
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "duration_m": "{m} Min.",
+  "@duration_m": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "distance_km": "{km} km",
+  "@distance_km": {
+    "placeholders": {
+      "km": {
+        "type": "String"
+      }
+    }
+  },
+  "home_my_mosques": "Meine Moscheen",
+  "home_add_mosque": "Hinzufügen",
+  "home_no_mosque_title": "Wähle deine Moschee",
+  "home_no_mosque_message": "Dann siehst du hier ihre Termine, Ankündigungen und Gebetszeiten.",
+  "home_choose_mosque": "Moschee wählen",
+  "home_events": "Termine",
+  "home_events_empty": "Keine anstehenden Termine.",
+  "home_notices": "Ankündigungen",
+  "home_nearby": "In der Umgebung",
+  "home_nearby_count": "{count, plural, =0{Keine weiteren Moscheen} =1{1 Moschee} other{{count} Moscheen}} im Umkreis von {km} km",
+  "@home_nearby_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "home_nearby_empty": "Im Umkreis stehen keine Termine an. Vergrößere den Umkreis, um mehr zu sehen.",
+  "radius_title": "Umkreis",
+  "radius_hint": "Gemessen ab deiner Hauptmoschee ({name}).",
+  "@radius_hint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "prayer_title": "Gebetszeiten",
+  "prayer_fajr": "Fadschr",
+  "prayer_sunrise": "Sonne",
+  "prayer_dhuhr": "Dhuhr",
+  "prayer_asr": "Asr",
+  "prayer_maghrib": "Maghrib",
+  "prayer_isha": "Ischa",
+  "prayer_next_in": "{prayer} in {duration}",
+  "@prayer_next_in": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "prayer_for": "{city} · {method}",
+  "@prayer_for": {
+    "placeholders": {
+      "city": {
+        "type": "String"
+      },
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "prayer_friday": "Freitagsgebet {time}",
+  "@prayer_friday": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "prayer_method_diyanet": "Diyanet",
+  "prayer_method_muslimWorldLeague": "Muslim World League",
+  "prayer_method_northAmerica": "ISNA (Nordamerika)",
+  "kind_info": "Hinweis",
+  "kind_event": "Veranstaltung",
+  "kind_cenaze": "Cenaze",
+  "kind_course": "Kurs",
+  "kind_festival": "Fest",
+  "kind_youth": "Jugend",
+  "announcement_open_mosque": "Zur Moschee",
+  "mosques_search_hint": "Moschee oder Ort",
+  "mosques_view_map": "Karte",
+  "mosques_view_list": "Liste",
+  "mosques_all_regions": "Alle Regionen",
+  "mosques_only_radius": "Umkreis {km} km",
+  "@mosques_only_radius": {
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "mosques_empty": "Keine Moschee gefunden.",
+  "mosques_count": "{count, plural, =1{1 Moschee} other{{count} Moscheen}}",
+  "@mosques_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "region_label": "Region {number}",
+  "@region_label": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "map_attribution": "© OpenStreetMap-Mitwirkende",
+  "mosque_mine": "Meine Moschee",
+  "mosque_primary": "Hauptmoschee",
+  "mosque_add_mine": "Als meine Moschee",
+  "mosque_remove_mine": "Entfernen",
+  "mosque_make_primary": "Als Hauptmoschee",
+  "mosque_verified": "Verifiziert",
+  "mosque_about": "Über die Moschee",
+  "mosque_prayer_today": "Gebetszeiten heute",
+  "mosque_no_events": "Derzeit keine Termine.",
+  "mosque_picker_title": "Moschee wählen",
+  "association_ditib": "DITIB",
+  "association_igmg": "IGMG",
+  "association_vikz": "VIKZ",
+  "association_zmd": "ZMD",
+  "association_independent": "Unabhängig",
+  "community_all": "Alle",
+  "community_offers": "Biete",
+  "community_requests": "Suche",
+  "community_sort_newest": "Neueste zuerst",
+  "community_sort_nearby": "In der Nähe zuerst",
+  "community_all_categories": "Alle Kategorien",
+  "community_hint": "Nur Text, kein Chat: Kontaktdaten werden erst geteilt, wenn beide zustimmen.",
+  "community_empty": "Keine Beiträge für diese Auswahl.",
+  "category_education": "Lernen & Nachhilfe",
+  "category_children": "Kinderbetreuung",
+  "category_moving": "Umzug & Tragen",
+  "category_transport": "Fahrten",
+  "category_repair": "Handwerk & Technik",
+  "category_accompany": "Begleitung & Alltag",
+  "category_giveaway": "Zu verschenken",
+  "category_other": "Sonstiges",
+  "post_offer": "Biete",
+  "post_request": "Suche",
+  "post_mine": "Dein Beitrag",
+  "post_interest": "Interesse melden",
+  "post_interest_done": "Interesse gemeldet",
+  "post_interest_count": "{count, plural, =0{Noch niemand interessiert} =1{1 Person interessiert} other{{count} Personen interessiert}}",
+  "@post_interest_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "post_interest_sent": "Interesse gemeldet. Sobald {name} zustimmt, seht ihr gegenseitig eure Kontaktdaten.",
+  "@post_interest_sent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "post_report": "Beitrag melden",
+  "post_reported": "Danke, der Beitrag wird geprüft.",
+  "post_new": "Beitrag",
+  "post_new_title": "Neuer Beitrag",
+  "post_form_title": "Titel",
+  "post_form_body": "Beschreibung",
+  "post_form_category": "Kategorie",
+  "post_form_mosque": "Gemeinde",
+  "post_form_rules": "Bitte keine Telefonnummern, Adressen oder gewerblichen Angebote. Beiträge können gemeldet werden.",
+  "post_form_publish": "Veröffentlichen",
+  "post_form_required": "Bitte ausfüllen.",
+  "post_created": "Beitrag veröffentlicht.",
+  "account_needed_title": "Dafür brauchst du ein Konto",
+  "account_needed_message": "Lesen geht ohne Konto. Um Beiträge zu erstellen oder Interesse zu melden, brauchst du ein Konto. So bleibt die Community sicher.",
+  "qibla_title": "Qibla",
+  "qibla_degrees": "{degrees}° von Norden",
+  "@qibla_degrees": {
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "qibla_based_on": "Berechnet für {place}",
+  "@qibla_based_on": {
+    "placeholders": {
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "qibla_no_sensor": "Kein Kompass verfügbar. Richte das Handy nach Norden aus, dann zeigt der Pfeil Richtung Mekka.",
+  "qibla_calibrate": "Für genaue Werte das Handy flach halten und einmal in einer Acht bewegen.",
+  "qibla_aligned": "Richtung stimmt",
+  "qibla_turn": "Drehe dich, bis der Pfeil nach oben zeigt.",
+  "qibla_no_mosque": "Wähle zuerst eine Moschee. Die Richtung wird für ihren Ort berechnet.",
+  "settings_title": "Einstellungen",
+  "settings_general": "Allgemein",
+  "settings_appearance": "Darstellung",
+  "settings_theme": "Design",
+  "theme_system": "System",
+  "theme_light": "Hell",
+  "theme_dark": "Dunkel",
+  "settings_accent": "Akzentfarbe",
+  "settings_language": "Sprache",
+  "settings_prayer": "Gebetszeiten",
+  "settings_prayer_method": "Berechnung",
+  "settings_data": "Daten",
+  "settings_mode": "Datenquelle",
+  "mode_test": "Testdaten",
+  "mode_cloud": "Cloud",
+  "mode_hint": "Testdaten: erfundene Termine und Beiträge zum Ausprobieren. Cloud: echte Daten, sobald sie eingebaut ist.",
+  "mode_cloud_unavailable": "Die Cloud ist noch nicht eingebaut.",
+  "settings_show_intro": "Einführung ansehen",
+  "settings_reset": "Einstellungen zurücksetzen",
+  "settings_about": "Über die App",
+  "settings_version": "Version",
+  "settings_licenses": "Lizenzen",
+  "account_sign_in": "Anmelden",
+  "account_sign_in_hint": "Für Beiträge in der Community",
+  "account_test": "Testkonto · nur auf diesem Gerät",
+  "account_change_name": "Namen ändern",
+  "account_change_email": "E-Mail ändern",
+  "account_change_password": "Passwort ändern",
+  "account_sign_out": "Abmelden",
+  "account_delete": "Konto löschen",
+  "account_delete_confirm": "Dein Konto und deine Beiträge werden gelöscht.",
+  "account_not_in_test": "In der Testversion noch nicht verfügbar.",
+  "intro_mosque_title": "Deine Moschee in der Tasche",
+  "intro_mosque_body": "Termine, Ankündigungen und Cenaze-Gebete deiner Moschee – direkt auf dem Handy.",
+  "intro_prayer_title": "Gebetszeiten und Qibla",
+  "intro_prayer_body": "Die Zeiten für deinen Ort nach Diyanet, dazu ein Kompass Richtung Mekka.",
+  "intro_nearby_title": "Moscheen in der Nähe",
+  "intro_nearby_body": "Alle Moscheen auf einer Karte. Feste und Veranstaltungen in deinem Umkreis auf einen Blick.",
+  "intro_community_title": "Gemeinsam helfen",
+  "intro_community_body": "Nachhilfe, Umzugshilfe, Babysitting: In der Community findest du Hilfe oder bietest sie an.",
+  "intro_start_title": "Wie möchtest du starten?",
+  "intro_guest_title": "Ohne Konto",
+  "intro_guest_1": "Termine, Gebetszeiten, Qibla und Karte",
+  "intro_guest_2": "Community-Beiträge lesen",
+  "intro_guest_3": "Keine persönlichen Daten nötig",
+  "intro_account_title": "Mit Konto",
+  "intro_account_1": "Alles ohne Konto, dazu:",
+  "intro_account_2": "Beiträge in der Community erstellen",
+  "intro_account_3": "Interesse melden und Kontakt aufnehmen",
+  "intro_register": "Registrieren",
+  "intro_login": "Ich habe schon ein Konto",
+  "intro_guest": "Ohne Konto fortfahren",
+  "intro_later_hint": "Anmelden kannst du dich jederzeit später in den Einstellungen.",
+  "auth_login_title": "Anmelden",
+  "auth_register_title": "Registrieren",
+  "auth_name": "Vorname",
+  "auth_email": "E-Mail",
+  "auth_password": "Passwort",
+  "auth_submit_login": "Anmelden",
+  "auth_submit_register": "Konto erstellen",
+  "auth_switch_to_register": "Noch kein Konto? Registrieren",
+  "auth_switch_to_login": "Schon ein Konto? Anmelden",
+  "auth_test_hint": "Testmodus: Das Konto wird nur auf diesem Gerät simuliert. Es wird nichts gesendet.",
+  "auth_age_note": "Mit der Registrierung bestätigst du, mindestens 16 Jahre alt zu sein.",
+  "auth_invalid_name": "Bitte gib deinen Vornamen ein.",
+  "auth_invalid_email": "Bitte gib eine gültige E-Mail ein.",
+  "auth_invalid_password": "Mindestens 6 Zeichen.",
+  "nav_admin": "Verwaltung",
+  "common_copied": "Kopiert",
+  "common_saved": "Gespeichert",
+  "location_use": "Standort verwenden",
+  "location_hint": "Für Qibla, Karte und Umkreis. Nur ungefähr, bleibt auf dem Gerät.",
+  "location_mine": "Dein Standort",
+  "location_denied": "Standort nicht freigegeben.",
+  "location_service_off": "Die Standortdienste sind ausgeschaltet.",
+  "location_unavailable": "Standort gerade nicht verfügbar.",
+  "location_open_settings": "Einstellungen",
+  "radius_hint_location": "Gemessen ab deinem Standort.",
+  "radius_off": "Aus",
+  "mosques_radius": "Umkreis",
+  "association_info_ditib": "Türkisch-Islamische Union der Anstalt für Religion e. V. – größter Moscheeverband in Deutschland. Die Gemeinden sind eigenständige Vereine.",
+  "association_info_other": "Verband, zu dem diese Moschee gehört.",
+  "region_info": "Region {number} des DITIB Landesjugendverbands Württemberg.",
+  "admin_role_owner": "Inhaber",
+  "admin_role_admin": "Admin",
+  "admin_role_editor": "Redakteur",
+  "admin_preview": "Vorschau",
+  "admin_preview_setting": "Verwaltung (Vorschau)",
+  "admin_preview_hint": "Zeigt den Tab, den Moschee-Verantwortliche sehen – hier für deine Hauptmoschee.",
+  "admin_no_mosque": "Wähle zuerst eine Hauptmoschee.",
+  "admin_view_page": "Seite ansehen",
+  "admin_entries": "Termine & Ankündigungen",
+  "admin_new_entry": "Neuer Eintrag",
+  "admin_entries_empty": "Noch keine Einträge.",
+  "admin_page": "Moschee-Seite",
+  "admin_edit_info": "Infos und Bild",
+  "admin_categories": "Kategorien",
+  "admin_team": "Team",
+  "admin_past": "vorbei",
+  "admin_test_note": "Änderungen gelten in den Testdaten bis zum Neustart der App.",
+  "entry_new": "Neuer Eintrag",
+  "entry_edit": "Eintrag bearbeiten",
+  "entry_category": "Kategorie",
+  "entry_title": "Titel",
+  "entry_body": "Text",
+  "entry_has_date": "Mit Termin",
+  "entry_date": "Datum",
+  "entry_time": "Uhrzeit",
+  "entry_notify": "Mitglieder benachrichtigen",
+  "entry_notify_hint": "Push-Nachricht, sobald die Cloud eingebaut ist.",
+  "entry_delete_confirm": "Eintrag löschen?",
+  "entry_required": "Bitte ausfüllen.",
+  "mosque_contact": "Kontakt",
+  "mosque_edit_about": "Beschreibung",
+  "mosque_edit_friday": "Freitagsgebet",
+  "mosque_edit_phone": "Telefon",
+  "mosque_edit_website": "Webseite",
+  "mosque_edit_none": "Keine Angabe",
+  "mosque_edit_locked": "Name, Adresse und Siegel ändert die App-Leitung.",
+  "category_new": "Neue Kategorie",
+  "category_edit": "Kategorie bearbeiten",
+  "category_name": "Name",
+  "category_color": "Farbe",
+  "category_icon": "Symbol",
+  "category_builtin": "Standard",
+  "category_custom_hint": "Standard-Kategorien gibt es überall. Eigene gelten nur für deine Moschee.",
+  "category_delete_confirm": "Einträge dieser Kategorie werden zu „Veranstaltung“.",
+  "team_invite": "Einladen",
+  "team_invite_title": "Einladungscode",
+  "team_invite_message": "Gib diesen Code an die Person weiter. Er gilt einmal und 7 Tage lang.",
+  "team_you": "Du",
+  "team_roles_hint": "Inhaber: alles, auch das Team. Admin: Seite, Termine, Kategorien. Redakteur: nur Termine und Ankündigungen.",
+  "team_remove": "Entfernen",
+  "@region_info": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "common_copy": "Kopieren",
+  "category_own": "Eigene",
+  "qibla_based_on_location": "Berechnet für deinen Standort"
+}

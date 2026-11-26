@@ -1,0 +1,15 @@
+# In pubspec.yaml unter dependencies ergänzen. Alle FlutterFire-Pakete
+# müssen dieselbe Firebase-SDK-Version nutzen (am einfachsten: alle mit
+# `flutter pub add` in einem Schritt hinzufügen).
+  firebase_core: ^4.15.0
+  firebase_auth: ^6.7.0
+  firebase_app_check: ^0.4.8
+  firebase_crashlytics: ^5.4.0
+  cloud_firestore: ^6.10.0
+  firebase_storage: ^13.6.0
+  cached_network_image: ^3.4.1
+  # Optional
+  google_sign_in: ^6.3.0          # Google-Anmeldung
+  cloud_functions: ^6.5.0         # aufrufbare Functions
+  firebase_messaging: ^16.7.0     # Push
+  app_links: ^7.2.1               # Einladungs-/Deep-Links

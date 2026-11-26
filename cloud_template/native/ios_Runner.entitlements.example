@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Nach ios/Runner/Runner.entitlements kopieren und in Xcode unter
+     Signing & Capabilities verknüpfen. Nur behalten, was genutzt wird. -->
+<plist version="1.0">
+<dict>
+	<!-- Push-Benachrichtigungen (firebase_messaging) -->
+	<key>aps-environment</key>
+	<string>development</string>
+	<!-- Mit Apple anmelden -->
+	<key>com.apple.developer.applesignin</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<!-- Universal Links (Einladungslinks o. Ä.) -->
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:DEIN-PROJEKT.web.app</string>
+	</array>
+</dict>
+</plist>

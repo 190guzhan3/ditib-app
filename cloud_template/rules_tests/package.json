@@ -1,0 +1,17 @@
+{
+  "name": "app-template-rules-tests",
+  "private": true,
+  "description": "Tests der Firestore-Regeln gegen den Emulator.",
+  "type": "module",
+  "scripts": {
+    "test": "firebase --config ../firebase.json emulators:exec --project demo-app-template --only firestore \"node --test\""
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.2",
+    "firebase": "^12.19.0",
+    "firebase-tools": "^14.27.0"
+  }
+}

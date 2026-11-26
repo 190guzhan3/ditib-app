@@ -1,0 +1,68 @@
+name: moschee_app
+description: Cemaat – Moscheen und Gemeinde in einer App.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  cupertino_icons: ^1.0.8
+
+  # Lokale Daten und Dateien
+  shared_preferences: ^2.4.28
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  uuid: ^4.6.0
+
+  # Bilder: Auswahl, Zuschnitt (Speichern siehe ImageStore)
+  image_picker: ^1.2.3
+  image_cropper: ^12.2.1
+
+  # UI
+  flutter_slidable: ^3.1.2
+  package_info_plus: ^10.2.1
+  scrollable_positioned_list: ^0.3.8
+  adhan: ^2.0.0+1
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  flutter_compass: ^0.8.1
+  geolocator: ^14.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.0
+
+flutter_native_splash:
+  # Weiß mit DITIB-Logo, auch im Dark Mode; danach übernimmt der animierte
+  # Splash in Flutter (lib/sections/start/splash_screen.dart) nahtlos.
+  color: "#FFFFFF"
+  image: "assets/branding/ditib_logo.png"
+  android_12:
+    color: "#FFFFFF"
+    image: "assets/branding/ditib_logo_android12.png"
+  android: true
+  ios: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#1E8E82"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/testdata/
+    - assets/branding/ditib_logo.png

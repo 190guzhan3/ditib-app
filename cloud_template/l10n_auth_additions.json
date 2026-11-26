@@ -1,0 +1,38 @@
+{
+  "de": {
+    "auth_email_invalid": "Ungültige E-Mail-Adresse",
+    "auth_error_network": "Keine Verbindung. Bitte prüfe deine Internetverbindung.",
+    "auth_error_other_provider": "Diese E-Mail ist schon mit einer anderen Anmeldung verknüpft (z. B. Google oder Passwort). Melde dich bitte damit an.",
+    "auth_error_recent_login": "Bitte melde dich aus Sicherheitsgründen erneut an und versuche es dann noch einmal.",
+    "auth_error_social": "Anmeldung fehlgeschlagen. Bitte versuche es erneut.",
+    "auth_error_user_disabled": "Dieses Konto wurde deaktiviert.",
+    "auth_error_wrong_credentials": "E-Mail oder Passwort ist falsch.",
+    "auth_login_error_default": "Anmeldung fehlgeschlagen. Bitte überprüfe deine Eingaben.",
+    "auth_login_error_too_many_requests": "Zu viele Anmeldeversuche. Bitte warte kurz.",
+    "auth_register_error_default": "Registrierung fehlgeschlagen. Bitte erneut versuchen.",
+    "auth_register_error_email_in_use": "Für diese E-Mail gibt es schon ein Konto. Melde dich an oder setze dein Passwort zurück.",
+    "auth_register_error_weak_password": "Passwort ist zu schwach.",
+    "settings_account_current_password_invalid": "Das aktuelle Passwort ist falsch.",
+    "settings_account_delete_error": "Fehler beim Löschen.",
+    "settings_account_email_change_error": "E-Mail konnte nicht geändert werden.",
+    "settings_account_password_change_error": "Passwort konnte nicht geändert werden."
+  },
+  "en": {
+    "auth_email_invalid": "Invalid email address",
+    "auth_error_network": "No connection. Please check your internet connection.",
+    "auth_error_other_provider": "This email is already linked to another sign-in method (e.g. Google or password). Please sign in with that.",
+    "auth_error_recent_login": "For security reasons, please sign in again and then try once more.",
+    "auth_error_social": "Sign-in failed. Please try again.",
+    "auth_error_user_disabled": "This account has been disabled.",
+    "auth_error_wrong_credentials": "Email or password is incorrect.",
+    "auth_login_error_default": "Login failed. Please check your input.",
+    "auth_login_error_too_many_requests": "Too many login attempts. Please wait a moment.",
+    "auth_register_error_default": "Registration failed. Please try again.",
+    "auth_register_error_email_in_use": "There is already an account for this email. Sign in or reset your password.",
+    "auth_register_error_weak_password": "Password is too weak.",
+    "settings_account_current_password_invalid": "The current password is incorrect.",
+    "settings_account_delete_error": "Error while deleting.",
+    "settings_account_email_change_error": "Email could not be changed.",
+    "settings_account_password_change_error": "Password could not be changed."
+  }
+}

@@ -1,0 +1,1774 @@
+{
+ "_info": "Testdaten. Regionen und Orte nach der Regionenkarte des DITIB Landesjugendverbands Württemberg; Koordinaten ungefähr (Ortsmitte); alle Termine, Texte und Beiträge erfunden. Erzeugt mit tool/build_test_data.py.",
+ "defaultMyMosques": [
+  "schorndorf"
+ ],
+ "regions": [
+  {
+   "number": 1,
+   "color": "#6E6E6E"
+  },
+  {
+   "number": 2,
+   "color": "#A3A3A3"
+  },
+  {
+   "number": 3,
+   "color": "#3F2DB0"
+  },
+  {
+   "number": 4,
+   "color": "#22A95C"
+  },
+  {
+   "number": 5,
+   "color": "#D9AE2B"
+  },
+  {
+   "number": 6,
+   "color": "#E67E33"
+  },
+  {
+   "number": 7,
+   "color": "#E07A80"
+  },
+  {
+   "number": 8,
+   "color": "#D93F44"
+  },
+  {
+   "number": 9,
+   "color": "#C95FB2"
+  },
+  {
+   "number": 10,
+   "color": "#3D9BE0"
+  },
+  {
+   "number": 11,
+   "color": "#7FC94F"
+  },
+  {
+   "number": 12,
+   "color": "#7B52D9"
+  }
+ ],
+ "badges": [
+  {
+   "id": "verified",
+   "color": "#2E9E5B",
+   "icon": "verified",
+   "name": {
+    "de": "Verifiziert",
+    "tr": "Doğrulanmış",
+    "en": "Verified"
+   },
+   "description": {
+    "de": "Die App-Leitung hat diese Moschee geprüft: Eintrag im Vereinsregister und Rückruf über die offizielle Telefonnummer. Die Inhalte pflegt die Moschee selbst.",
+    "tr": "Uygulama yönetimi bu camiyi kontrol etti: dernek kaydı ve resmi telefon numarası üzerinden geri arama. İçerikleri cami kendisi düzenler.",
+    "en": "The app team checked this mosque: entry in the register of associations and a call back via its official phone number. The mosque maintains its content itself."
+   }
+  },
+  {
+   "id": "accessible",
+   "color": "#4F8EF7",
+   "icon": "accessible",
+   "name": {
+    "de": "Barrierefrei",
+    "tr": "Engelsiz",
+    "en": "Accessible"
+   },
+   "description": {
+    "de": "Stufenloser Zugang zum Gebetsraum (Angabe der Moschee).",
+    "tr": "Namaz alanına basamaksız erişim (caminin beyanı).",
+    "en": "Step-free access to the prayer hall (stated by the mosque)."
+   }
+  },
+  {
+   "id": "women_area",
+   "color": "#AB47BC",
+   "icon": "women",
+   "name": {
+    "de": "Frauenbereich",
+    "tr": "Kadınlar bölümü",
+    "en": "Women's area"
+   },
+   "description": {
+    "de": "Eigener Gebetsraum für Frauen.",
+    "tr": "Kadınlar için ayrı namaz alanı.",
+    "en": "Separate prayer room for women."
+   }
+  },
+  {
+   "id": "parking",
+   "color": "#78909C",
+   "icon": "parking",
+   "name": {
+    "de": "Parkplätze",
+    "tr": "Otopark",
+    "en": "Parking"
+   },
+   "description": {
+    "de": "Parkplätze direkt an der Moschee.",
+    "tr": "Caminin hemen yanında park yeri.",
+    "en": "Parking right at the mosque."
+   }
+  }
+ ],
+ "categories": [
+  {
+   "id": "schorndorf-frauen",
+   "mosqueId": "schorndorf",
+   "name": "Frauenkreis",
+   "color": "#D81B60",
+   "icon": "women"
+  },
+  {
+   "id": "schorndorf-sport",
+   "mosqueId": "schorndorf",
+   "name": "Sport",
+   "color": "#43A047",
+   "icon": "sport"
+  }
+ ],
+ "mosques": [
+  {
+   "id": "bietigheim-bissingen",
+   "name": "DITIB Bietigheim-Bissingen",
+   "city": "Bietigheim-Bissingen",
+   "postalCode": "74321",
+   "region": 1,
+   "lat": 48.948,
+   "lng": 9.133,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "eppingen",
+   "name": "DITIB Eppingen",
+   "city": "Eppingen",
+   "postalCode": "75031",
+   "region": 1,
+   "lat": 49.137,
+   "lng": 8.91,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "erdmannhausen",
+   "name": "DITIB Erdmannhausen",
+   "city": "Erdmannhausen",
+   "postalCode": "71729",
+   "region": 1,
+   "lat": 48.942,
+   "lng": 9.296,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "gueglingen",
+   "name": "DITIB Güglingen",
+   "city": "Güglingen",
+   "postalCode": "74363",
+   "region": 1,
+   "lat": 49.066,
+   "lng": 9.0,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "gundelsheim",
+   "name": "DITIB Gundelsheim",
+   "city": "Gundelsheim",
+   "postalCode": "74831",
+   "region": 1,
+   "lat": 49.283,
+   "lng": 9.161,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "heilbronn",
+   "name": "DITIB Heilbronn",
+   "city": "Heilbronn",
+   "postalCode": "74072",
+   "region": 1,
+   "lat": 49.142,
+   "lng": 9.219,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "hemmingen",
+   "name": "DITIB Hemmingen",
+   "city": "Hemmingen",
+   "postalCode": "71282",
+   "region": 1,
+   "lat": 48.866,
+   "lng": 9.036,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "kirchheim-neckar",
+   "name": "DITIB Kirchheim / Neckar",
+   "city": "Kirchheim / Neckar",
+   "postalCode": "74366",
+   "region": 1,
+   "lat": 49.045,
+   "lng": 9.143,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "kornwestheim",
+   "name": "DITIB Kornwestheim",
+   "city": "Kornwestheim",
+   "postalCode": "70806",
+   "region": 1,
+   "lat": 48.862,
+   "lng": 9.185,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "lauffen-neckar",
+   "name": "DITIB Lauffen / Neckar",
+   "city": "Lauffen / Neckar",
+   "postalCode": "74348",
+   "region": 1,
+   "lat": 49.076,
+   "lng": 9.148,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ludwigsburg",
+   "name": "DITIB Ludwigsburg",
+   "city": "Ludwigsburg",
+   "postalCode": "71634",
+   "region": 1,
+   "lat": 48.897,
+   "lng": 9.192,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "markgroeningen",
+   "name": "DITIB Markgröningen",
+   "city": "Markgröningen",
+   "postalCode": "71706",
+   "region": 1,
+   "lat": 48.905,
+   "lng": 9.081,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "oberstenfeld",
+   "name": "DITIB Oberstenfeld",
+   "city": "Oberstenfeld",
+   "postalCode": "71720",
+   "region": 1,
+   "lat": 49.026,
+   "lng": 9.322,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "sachsenheim",
+   "name": "DITIB Sachsenheim",
+   "city": "Sachsenheim",
+   "postalCode": "74343",
+   "region": 1,
+   "lat": 48.96,
+   "lng": 9.065,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "vaihingen-enz",
+   "name": "DITIB Vaihingen / Enz",
+   "city": "Vaihingen / Enz",
+   "postalCode": "71665",
+   "region": 1,
+   "lat": 48.933,
+   "lng": 8.957,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "crailsheim",
+   "name": "DITIB Crailsheim",
+   "city": "Crailsheim",
+   "postalCode": "74564",
+   "region": 2,
+   "lat": 49.135,
+   "lng": 10.071,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "gaildorf",
+   "name": "DITIB Gaildorf",
+   "city": "Gaildorf",
+   "postalCode": "74405",
+   "region": 2,
+   "lat": 49.0,
+   "lng": 9.77,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "lauda-koenigshofen",
+   "name": "DITIB Lauda-Königshofen",
+   "city": "Lauda-Königshofen",
+   "postalCode": "97922",
+   "region": 2,
+   "lat": 49.565,
+   "lng": 9.705,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "oehringen",
+   "name": "DITIB Öhringen",
+   "city": "Öhringen",
+   "postalCode": "74613",
+   "region": 2,
+   "lat": 49.2,
+   "lng": 9.502,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "schwaebisch-hall",
+   "name": "DITIB Schwäbisch Hall",
+   "city": "Schwäbisch Hall",
+   "postalCode": "74523",
+   "region": 2,
+   "lat": 49.112,
+   "lng": 9.737,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "wertheim",
+   "name": "DITIB Wertheim",
+   "city": "Wertheim",
+   "postalCode": "97877",
+   "region": 2,
+   "lat": 49.759,
+   "lng": 9.517,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ditzingen",
+   "name": "DITIB Ditzingen",
+   "city": "Ditzingen",
+   "postalCode": "71254",
+   "region": 3,
+   "lat": 48.827,
+   "lng": 9.067,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "filderstadt",
+   "name": "DITIB Filderstadt",
+   "city": "Filderstadt",
+   "postalCode": "70794",
+   "region": 3,
+   "lat": 48.67,
+   "lng": 9.22,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "herrenberg",
+   "name": "DITIB Herrenberg",
+   "city": "Herrenberg",
+   "postalCode": "71083",
+   "region": 3,
+   "lat": 48.596,
+   "lng": 8.87,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "leonberg",
+   "name": "DITIB Leonberg",
+   "city": "Leonberg",
+   "postalCode": "71229",
+   "region": 3,
+   "lat": 48.8,
+   "lng": 9.015,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "renningen",
+   "name": "DITIB Renningen",
+   "city": "Renningen",
+   "postalCode": "71272",
+   "region": 3,
+   "lat": 48.766,
+   "lng": 8.934,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "sindelfingen",
+   "name": "DITIB Sindelfingen",
+   "city": "Sindelfingen",
+   "postalCode": "71063",
+   "region": 3,
+   "lat": 48.713,
+   "lng": 9.003,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "stuttgart-feuerbach",
+   "name": "DITIB Stuttgart-Feuerbach",
+   "city": "Stuttgart-Feuerbach",
+   "postalCode": "70469",
+   "region": 3,
+   "lat": 48.811,
+   "lng": 9.16,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "stuttgart-vaihingen",
+   "name": "DITIB Stuttgart-Vaihingen",
+   "city": "Stuttgart-Vaihingen",
+   "postalCode": "70563",
+   "region": 3,
+   "lat": 48.729,
+   "lng": 9.108,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "waldenbuch",
+   "name": "DITIB Waldenbuch",
+   "city": "Waldenbuch",
+   "postalCode": "71111",
+   "region": 3,
+   "lat": 48.638,
+   "lng": 9.132,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "backnang",
+   "name": "DITIB Backnang",
+   "city": "Backnang",
+   "postalCode": "71522",
+   "region": 4,
+   "lat": 48.947,
+   "lng": 9.43,
+   "association": "ditib",
+   "about": "DITIB-Gemeinde Backnang mit Vortragsreihe und Hausaufgabenhilfe.",
+   "badges": [
+    "verified",
+    "accessible"
+   ]
+  },
+  {
+   "id": "murrhardt",
+   "name": "DITIB Murrhardt",
+   "city": "Murrhardt",
+   "postalCode": "71540",
+   "region": 4,
+   "lat": 48.98,
+   "lng": 9.578,
+   "association": "ditib",
+   "about": "Gemeinde in Murrhardt mit Hafızlık-Kurs.",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "rudersberg",
+   "name": "DITIB Rudersberg",
+   "city": "Rudersberg",
+   "postalCode": "73635",
+   "region": 4,
+   "lat": 48.885,
+   "lng": 9.528,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "schorndorf",
+   "name": "DITIB Schorndorf",
+   "city": "Schorndorf",
+   "postalCode": "73614",
+   "region": 4,
+   "lat": 48.806,
+   "lng": 9.528,
+   "association": "ditib",
+   "about": "Unsere Gemeinde in Schorndorf: tägliche Gebete, Koranunterricht für Kinder, Jugend- und Frauengruppe, Teestube. Gäste sind jederzeit willkommen.",
+   "fridayPrayer": "12:45",
+   "badges": [
+    "verified",
+    "accessible",
+    "women_area",
+    "parking"
+   ]
+  },
+  {
+   "id": "schwaikheim",
+   "name": "DITIB Schwaikheim",
+   "city": "Schwaikheim",
+   "postalCode": "71409",
+   "region": 4,
+   "lat": 48.877,
+   "lng": 9.35,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "urbach",
+   "name": "DITIB Urbach",
+   "city": "Urbach",
+   "postalCode": "73660",
+   "region": 4,
+   "lat": 48.815,
+   "lng": 9.577,
+   "association": "ditib",
+   "about": "Kleine, familiäre Gemeinde im Remstal.",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "waiblingen",
+   "name": "DITIB Waiblingen",
+   "city": "Waiblingen",
+   "postalCode": "71332",
+   "region": 4,
+   "lat": 48.831,
+   "lng": 9.317,
+   "association": "ditib",
+   "about": "Moschee und Begegnungsort in Waiblingen mit Kursen für Kinder und Erwachsene.",
+   "badges": [
+    "verified",
+    "women_area",
+    "parking"
+   ]
+  },
+  {
+   "id": "welzheim",
+   "name": "DITIB Welzheim",
+   "city": "Welzheim",
+   "postalCode": "73642",
+   "region": 4,
+   "lat": 48.876,
+   "lng": 9.635,
+   "association": "ditib",
+   "about": "Gemeinde im Schwäbischen Wald.",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "winnenden",
+   "name": "DITIB Winnenden",
+   "city": "Winnenden",
+   "postalCode": "71364",
+   "region": 4,
+   "lat": 48.876,
+   "lng": 9.398,
+   "association": "ditib",
+   "about": "Gemeinde in Winnenden – Gebete, Jugendarbeit und Kermes zweimal im Jahr.",
+   "badges": [
+    "verified",
+    "parking"
+   ]
+  },
+  {
+   "id": "aalen",
+   "name": "DITIB Aalen",
+   "city": "Aalen",
+   "postalCode": "73430",
+   "region": 5,
+   "lat": 48.837,
+   "lng": 10.093,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bopfingen",
+   "name": "DITIB Bopfingen",
+   "city": "Bopfingen",
+   "postalCode": "73441",
+   "region": 5,
+   "lat": 48.857,
+   "lng": 10.353,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ellwangen",
+   "name": "DITIB Ellwangen",
+   "city": "Ellwangen",
+   "postalCode": "73479",
+   "region": 5,
+   "lat": 48.962,
+   "lng": 10.131,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "heubach",
+   "name": "DITIB Heubach",
+   "city": "Heubach",
+   "postalCode": "73540",
+   "region": 5,
+   "lat": 48.792,
+   "lng": 9.934,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "neresheim",
+   "name": "DITIB Neresheim",
+   "city": "Neresheim",
+   "postalCode": "73450",
+   "region": 5,
+   "lat": 48.755,
+   "lng": 10.335,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "schwaebisch-gmuend",
+   "name": "DITIB Schwäbisch Gmünd",
+   "city": "Schwäbisch Gmünd",
+   "postalCode": "73525",
+   "region": 5,
+   "lat": 48.799,
+   "lng": 9.798,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ebersbach-fils",
+   "name": "DITIB Ebersbach / Fils",
+   "city": "Ebersbach / Fils",
+   "postalCode": "73061",
+   "region": 6,
+   "lat": 48.716,
+   "lng": 9.523,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "esslingen-neckar",
+   "name": "DITIB Esslingen / Neckar",
+   "city": "Esslingen / Neckar",
+   "postalCode": "73728",
+   "region": 6,
+   "lat": 48.742,
+   "lng": 9.307,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "geislingen",
+   "name": "DITIB Geislingen",
+   "city": "Geislingen",
+   "postalCode": "73312",
+   "region": 6,
+   "lat": 48.623,
+   "lng": 9.83,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "goeppingen",
+   "name": "DITIB Göppingen",
+   "city": "Göppingen",
+   "postalCode": "73033",
+   "region": 6,
+   "lat": 48.703,
+   "lng": 9.652,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "kirchheim-teck",
+   "name": "DITIB Kirchheim / Teck",
+   "city": "Kirchheim / Teck",
+   "postalCode": "73230",
+   "region": 6,
+   "lat": 48.648,
+   "lng": 9.451,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "koengen",
+   "name": "DITIB Köngen",
+   "city": "Köngen",
+   "postalCode": "73257",
+   "region": 6,
+   "lat": 48.682,
+   "lng": 9.366,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ostfildern",
+   "name": "DITIB Ostfildern",
+   "city": "Ostfildern",
+   "postalCode": "73760",
+   "region": 6,
+   "lat": 48.722,
+   "lng": 9.262,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "suessen",
+   "name": "DITIB Süßen",
+   "city": "Süßen",
+   "postalCode": "73079",
+   "region": 6,
+   "lat": 48.68,
+   "lng": 9.758,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "uhingen",
+   "name": "DITIB Uhingen",
+   "city": "Uhingen",
+   "postalCode": "73066",
+   "region": 6,
+   "lat": 48.706,
+   "lng": 9.588,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "wernau-neckar",
+   "name": "DITIB Wernau / Neckar",
+   "city": "Wernau / Neckar",
+   "postalCode": "73249",
+   "region": 6,
+   "lat": 48.689,
+   "lng": 9.418,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "giengen-brenz",
+   "name": "DITIB Giengen / Brenz",
+   "city": "Giengen / Brenz",
+   "postalCode": "89537",
+   "region": 7,
+   "lat": 48.622,
+   "lng": 10.244,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "heidenheim",
+   "name": "DITIB Heidenheim",
+   "city": "Heidenheim",
+   "postalCode": "89518",
+   "region": 7,
+   "lat": 48.677,
+   "lng": 10.153,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "langenau",
+   "name": "DITIB Langenau",
+   "city": "Langenau",
+   "postalCode": "89129",
+   "region": 7,
+   "lat": 48.497,
+   "lng": 10.12,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "lonsee",
+   "name": "DITIB Lonsee",
+   "city": "Lonsee",
+   "postalCode": "89173",
+   "region": 7,
+   "lat": 48.543,
+   "lng": 9.92,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "sontheim",
+   "name": "DITIB Sontheim",
+   "city": "Sontheim",
+   "postalCode": "89567",
+   "region": 7,
+   "lat": 48.553,
+   "lng": 10.29,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bad-urach",
+   "name": "DITIB Bad Urach",
+   "city": "Bad Urach",
+   "postalCode": "72574",
+   "region": 8,
+   "lat": 48.492,
+   "lng": 9.4,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "dettingen-erms",
+   "name": "DITIB Dettingen / Erms",
+   "city": "Dettingen / Erms",
+   "postalCode": "72581",
+   "region": 8,
+   "lat": 48.53,
+   "lng": 9.347,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "hohenstein",
+   "name": "DITIB Hohenstein",
+   "city": "Hohenstein",
+   "postalCode": "72531",
+   "region": 8,
+   "lat": 48.33,
+   "lng": 9.33,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "metzingen",
+   "name": "DITIB Metzingen",
+   "city": "Metzingen",
+   "postalCode": "72555",
+   "region": 8,
+   "lat": 48.537,
+   "lng": 9.284,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "muensingen",
+   "name": "DITIB Münsingen",
+   "city": "Münsingen",
+   "postalCode": "72525",
+   "region": 8,
+   "lat": 48.413,
+   "lng": 9.495,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "reutlingen",
+   "name": "DITIB Reutlingen",
+   "city": "Reutlingen",
+   "postalCode": "72764",
+   "region": 8,
+   "lat": 48.491,
+   "lng": 9.211,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "tuebingen",
+   "name": "DITIB Tübingen",
+   "city": "Tübingen",
+   "postalCode": "72070",
+   "region": 8,
+   "lat": 48.521,
+   "lng": 9.057,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "albstadt-ebingen",
+   "name": "DITIB Albstadt / Ebingen",
+   "city": "Albstadt / Ebingen",
+   "postalCode": "72458",
+   "region": 9,
+   "lat": 48.214,
+   "lng": 9.023,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "albstadt-tailfingen",
+   "name": "DITIB Albstadt / Tailfingen",
+   "city": "Albstadt / Tailfingen",
+   "postalCode": "72461",
+   "region": 9,
+   "lat": 48.255,
+   "lng": 9.019,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "haigerloch",
+   "name": "DITIB Haigerloch",
+   "city": "Haigerloch",
+   "postalCode": "72401",
+   "region": 9,
+   "lat": 48.364,
+   "lng": 8.805,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "hechingen",
+   "name": "DITIB Hechingen",
+   "city": "Hechingen",
+   "postalCode": "72379",
+   "region": 9,
+   "lat": 48.352,
+   "lng": 8.964,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "schoemberg",
+   "name": "DITIB Schömberg",
+   "city": "Schömberg",
+   "postalCode": "72355",
+   "region": 9,
+   "lat": 48.207,
+   "lng": 8.758,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "winterlingen",
+   "name": "DITIB Winterlingen",
+   "city": "Winterlingen",
+   "postalCode": "72474",
+   "region": 9,
+   "lat": 48.18,
+   "lng": 9.115,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "biberach-riss",
+   "name": "DITIB Biberach / Riss",
+   "city": "Biberach / Riss",
+   "postalCode": "88400",
+   "region": 10,
+   "lat": 48.098,
+   "lng": 9.788,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "blaubeuren",
+   "name": "DITIB Blaubeuren",
+   "city": "Blaubeuren",
+   "postalCode": "89143",
+   "region": 10,
+   "lat": 48.412,
+   "lng": 9.785,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "dietenheim",
+   "name": "DITIB Dietenheim",
+   "city": "Dietenheim",
+   "postalCode": "89165",
+   "region": 10,
+   "lat": 48.212,
+   "lng": 10.073,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ehingen-donau",
+   "name": "DITIB Ehingen / Donau",
+   "city": "Ehingen / Donau",
+   "postalCode": "89584",
+   "region": 10,
+   "lat": 48.283,
+   "lng": 9.725,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "erbach",
+   "name": "DITIB Erbach",
+   "city": "Erbach",
+   "postalCode": "89155",
+   "region": 10,
+   "lat": 48.328,
+   "lng": 9.888,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "kirchdorf-iller",
+   "name": "DITIB Kirchdorf / Iller",
+   "city": "Kirchdorf / Iller",
+   "postalCode": "88457",
+   "region": 10,
+   "lat": 48.076,
+   "lng": 10.13,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "laichingen",
+   "name": "DITIB Laichingen",
+   "city": "Laichingen",
+   "postalCode": "89150",
+   "region": 10,
+   "lat": 48.489,
+   "lng": 9.687,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "laupheim",
+   "name": "DITIB Laupheim",
+   "city": "Laupheim",
+   "postalCode": "88471",
+   "region": 10,
+   "lat": 48.229,
+   "lng": 9.88,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "munderkingen",
+   "name": "DITIB Munderkingen",
+   "city": "Munderkingen",
+   "postalCode": "89597",
+   "region": 10,
+   "lat": 48.235,
+   "lng": 9.645,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ulm-donau",
+   "name": "DITIB Ulm / Donau",
+   "city": "Ulm / Donau",
+   "postalCode": "89073",
+   "region": 10,
+   "lat": 48.398,
+   "lng": 9.992,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bad-saulgau",
+   "name": "DITIB Bad Saulgau",
+   "city": "Bad Saulgau",
+   "postalCode": "88348",
+   "region": 11,
+   "lat": 48.016,
+   "lng": 9.5,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bad-schussenried",
+   "name": "DITIB Bad Schussenried",
+   "city": "Bad Schussenried",
+   "postalCode": "88427",
+   "region": 11,
+   "lat": 48.006,
+   "lng": 9.659,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "mengen-ennetach",
+   "name": "DITIB Mengen / Ennetach",
+   "city": "Mengen / Ennetach",
+   "postalCode": "88512",
+   "region": 11,
+   "lat": 48.05,
+   "lng": 9.33,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "messkirch",
+   "name": "DITIB Meßkirch",
+   "city": "Meßkirch",
+   "postalCode": "88605",
+   "region": 11,
+   "lat": 47.993,
+   "lng": 9.112,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "pfullendorf",
+   "name": "DITIB Pfullendorf",
+   "city": "Pfullendorf",
+   "postalCode": "88630",
+   "region": 11,
+   "lat": 47.924,
+   "lng": 9.257,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "sigmaringen",
+   "name": "DITIB Sigmaringen",
+   "city": "Sigmaringen",
+   "postalCode": "72488",
+   "region": 11,
+   "lat": 48.087,
+   "lng": 9.217,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ueberlingen",
+   "name": "DITIB Überlingen",
+   "city": "Überlingen",
+   "postalCode": "88662",
+   "region": 11,
+   "lat": 47.768,
+   "lng": 9.159,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bad-waldsee",
+   "name": "DITIB Bad Waldsee",
+   "city": "Bad Waldsee",
+   "postalCode": "88339",
+   "region": 12,
+   "lat": 47.92,
+   "lng": 9.754,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "bad-wurzach",
+   "name": "DITIB Bad Wurzach",
+   "city": "Bad Wurzach",
+   "postalCode": "88410",
+   "region": 12,
+   "lat": 47.908,
+   "lng": 9.896,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "friedrichshafen",
+   "name": "DITIB Friedrichshafen",
+   "city": "Friedrichshafen",
+   "postalCode": "88045",
+   "region": 12,
+   "lat": 47.654,
+   "lng": 9.479,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "isny",
+   "name": "DITIB Isny",
+   "city": "Isny",
+   "postalCode": "88316",
+   "region": 12,
+   "lat": 47.692,
+   "lng": 10.039,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "leutkirch",
+   "name": "DITIB Leutkirch",
+   "city": "Leutkirch",
+   "postalCode": "88299",
+   "region": 12,
+   "lat": 47.826,
+   "lng": 10.022,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "ravensburg",
+   "name": "DITIB Ravensburg",
+   "city": "Ravensburg",
+   "postalCode": "88212",
+   "region": 12,
+   "lat": 47.782,
+   "lng": 9.612,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  },
+  {
+   "id": "wangen",
+   "name": "DITIB Wangen",
+   "city": "Wangen",
+   "postalCode": "88239",
+   "region": 12,
+   "lat": 47.686,
+   "lng": 9.834,
+   "association": "ditib",
+   "badges": [
+    "verified"
+   ]
+  }
+ ],
+ "announcements": [
+  {
+   "mosqueId": "schorndorf",
+   "title": "Cenaze-Gebet",
+   "body": "Unsere Schwester Hatice K. ist verstorben. Das Totengebet findet nach dem Mittagsgebet im Hof der Moschee statt. Allah rahmet eylesin.",
+   "dayOffset": 1,
+   "time": "12:45",
+   "postedHoursAgo": 3,
+   "category": "cenaze",
+   "id": "a1"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Jugendabend: Quiz & Tee",
+   "body": "Für alle zwischen 14 und 25. Wir spielen ein Quiz rund um Geschichte und Alltag, danach gibt es Tee und Simit.",
+   "dayOffset": 2,
+   "time": "19:00",
+   "postedHoursAgo": 30,
+   "category": "youth",
+   "id": "a2"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Koran-Kurs für Kinder (7–12 Jahre)",
+   "body": "Jeden Samstag. Anmeldung beim Imam oder nach dem Freitagsgebet. Bitte Heft und Stift mitbringen.",
+   "dayOffset": 3,
+   "time": "10:00",
+   "postedHoursAgo": 72,
+   "category": "course",
+   "id": "a3"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Kandil-Programm",
+   "body": "Gemeinsames Gebet, Koranrezitation und kurzer Vortrag. Im Anschluss Lokma für alle.",
+   "dayOffset": 6,
+   "time": "19:30",
+   "postedHoursAgo": 50,
+   "category": "event",
+   "id": "a4"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Frauenkreis: Tee & Gespräch",
+   "body": "Offener Abend für Frauen jeden Alters. Diesmal zum Thema Erziehung im Alltag. Kinderbetreuung im Nebenraum.",
+   "dayOffset": 5,
+   "time": "18:00",
+   "postedHoursAgo": 44,
+   "category": "schorndorf-frauen",
+   "id": "a5"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Fußball-Abend",
+   "body": "Halle der Grauhalde-Schule, Sportschuhe mitbringen. Ab 16 Jahren.",
+   "dayOffset": 7,
+   "time": "20:00",
+   "postedHoursAgo": 60,
+   "category": "schorndorf-sport",
+   "id": "a6"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Kermes – Winterbasar",
+   "body": "Gözleme, Lahmacun, Baklava und Çay. Kinderprogramm im Gemeindesaal. Der Erlös geht an die Renovierung der Waschräume.",
+   "dayOffset": 10,
+   "time": "11:00",
+   "postedHoursAgo": 120,
+   "category": "festival",
+   "id": "a7"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Hac kayıtları 2027 başladı",
+   "body": "2027 Hac organizasyonu için kayıtlar başladı. Bilgi ve kayıt için cemaat başkanlığına başvurabilirsiniz.",
+   "postedHoursAgo": 20,
+   "category": "info",
+   "id": "a8"
+  },
+  {
+   "mosqueId": "schorndorf",
+   "title": "Spendenaufruf: Renovierung der Waschräume",
+   "body": "Die Waschräume werden im Frühjahr erneuert. Spenden sind über das Gemeindekonto oder bei der Kermes möglich.",
+   "postedHoursAgo": 110,
+   "category": "info",
+   "id": "a9"
+  },
+  {
+   "mosqueId": "backnang",
+   "title": "Cenaze namazı",
+   "body": "Kardeşimiz Mustafa A. vefat etmiştir. Cenaze namazı öğle namazına müteakip kılınacaktır.",
+   "dayOffset": 0,
+   "time": "13:00",
+   "postedHoursAgo": 5,
+   "category": "cenaze",
+   "id": "a10"
+  },
+  {
+   "mosqueId": "backnang",
+   "title": "Vortrag: Islam und Umweltschutz",
+   "body": "Vortrag mit anschließender Diskussion, auf Deutsch. Eintritt frei.",
+   "dayOffset": 3,
+   "time": "19:00",
+   "postedHoursAgo": 40,
+   "category": "event",
+   "id": "a11"
+  },
+  {
+   "mosqueId": "waiblingen",
+   "title": "Tag der offenen Moschee",
+   "body": "Führungen um 11, 13 und 15 Uhr, Ausstellung zur Geschichte der Gemeinde, Tee und Gebäck.",
+   "dayOffset": 5,
+   "time": "10:00",
+   "postedHoursAgo": 60,
+   "category": "festival",
+   "id": "a12"
+  },
+  {
+   "mosqueId": "waiblingen",
+   "title": "Türkisch für Kinder",
+   "body": "Neuer Kurs für Anfänger, 6–10 Jahre. Freie Plätze vorhanden.",
+   "dayOffset": 4,
+   "time": "15:00",
+   "postedHoursAgo": 90,
+   "category": "course",
+   "id": "a13"
+  },
+  {
+   "mosqueId": "winnenden",
+   "title": "Kermes",
+   "body": "Hausgemachtes Essen, Bücherstand und Hüpfburg für Kinder.",
+   "dayOffset": 12,
+   "time": "11:00",
+   "postedHoursAgo": 100,
+   "category": "festival",
+   "id": "a14"
+  },
+  {
+   "mosqueId": "urbach",
+   "title": "Frauenfrühstück",
+   "body": "Gemeinsames Frühstück und Austausch. Bitte bis Freitag anmelden.",
+   "dayOffset": 4,
+   "time": "09:30",
+   "postedHoursAgo": 26,
+   "category": "event",
+   "id": "a15"
+  },
+  {
+   "mosqueId": "welzheim",
+   "title": "Familienwanderung am Ebnisee",
+   "body": "Treffpunkt Parkplatz Ebnisee. Picknick bitte selbst mitbringen, Tee gibt es von uns.",
+   "dayOffset": 8,
+   "time": "10:30",
+   "postedHoursAgo": 70,
+   "category": "youth",
+   "id": "a16"
+  },
+  {
+   "mosqueId": "murrhardt",
+   "title": "Hafızlık icazet merasimi",
+   "body": "Hafızlığını tamamlayan öğrencilerimiz için icazet merasimi. Tüm cemaatimiz davetlidir.",
+   "dayOffset": 14,
+   "time": "14:00",
+   "postedHoursAgo": 140,
+   "category": "festival",
+   "id": "a17"
+  },
+  {
+   "mosqueId": "schwaikheim",
+   "title": "Hausaufgabenhilfe",
+   "body": "Montags und mittwochs für Grundschulkinder, kostenlos.",
+   "dayOffset": 5,
+   "time": "15:30",
+   "postedHoursAgo": 160,
+   "category": "course",
+   "id": "a18"
+  },
+  {
+   "mosqueId": "rudersberg",
+   "title": "Gemeinsames Fastenbrechen (Freiwilliges Fasten)",
+   "body": "Wer am Donnerstag freiwillig fastet, ist zum gemeinsamen Iftar eingeladen.",
+   "dayOffset": 1,
+   "time": "16:45",
+   "postedHoursAgo": 22,
+   "category": "event",
+   "id": "a19"
+  },
+  {
+   "mosqueId": "esslingen-neckar",
+   "title": "Kermes",
+   "body": "Großer Wohltätigkeitsbasar in Esslingen.",
+   "dayOffset": 9,
+   "time": "11:00",
+   "postedHoursAgo": 80,
+   "category": "festival",
+   "id": "a20"
+  },
+  {
+   "mosqueId": "ludwigsburg",
+   "title": "Kinderfest",
+   "body": "Spiele, Kinderschminken und Theater für Kinder bis 12.",
+   "dayOffset": 6,
+   "time": "14:00",
+   "postedHoursAgo": 75,
+   "category": "festival",
+   "id": "a21"
+  },
+  {
+   "mosqueId": "goeppingen",
+   "title": "Vortrag: Ehrenamt in der Gemeinde",
+   "body": "Wie kann ich mich einbringen? Infoabend mit dem Vorstand.",
+   "dayOffset": 7,
+   "time": "19:30",
+   "postedHoursAgo": 65,
+   "category": "event",
+   "id": "a22"
+  },
+  {
+   "mosqueId": "schwaebisch-gmuend",
+   "title": "Fußballturnier der Jugend",
+   "body": "Teams aus der ganzen Region, Anmeldung bis Mittwoch.",
+   "dayOffset": 11,
+   "time": "09:00",
+   "postedHoursAgo": 95,
+   "category": "youth",
+   "id": "a23"
+  }
+ ],
+ "communityPosts": [
+  {
+   "kind": "offer",
+   "category": "education",
+   "title": "Nachhilfe Mathe & Physik (Klasse 5–10)",
+   "body": "Ich studiere Maschinenbau und gebe gern Nachhilfe, bei euch zu Hause oder in der Moschee. Kostenlos für Gemeindemitglieder.",
+   "author": "Yusuf",
+   "mosqueId": "schorndorf",
+   "postedHoursAgo": 3,
+   "interest": 2,
+   "id": "p1"
+  },
+  {
+   "kind": "request",
+   "category": "children",
+   "title": "Babysitter für Dienstagabend gesucht",
+   "body": "Für zwei Kinder (4 und 7 Jahre), ca. 18–21 Uhr, alle zwei Wochen. Gerne mit Erfahrung.",
+   "author": "Ayşe",
+   "mosqueId": "schorndorf",
+   "postedHoursAgo": 26,
+   "interest": 1,
+   "id": "p2"
+  },
+  {
+   "kind": "offer",
+   "category": "moving",
+   "title": "Helfe beim Umzug – habe einen Transporter",
+   "body": "Samstags meistens frei. Kraftstoff bitte übernehmen, sonst kostenlos.",
+   "author": "Mehmet",
+   "mosqueId": "waiblingen",
+   "postedHoursAgo": 50,
+   "interest": 4,
+   "id": "p3"
+  },
+  {
+   "kind": "offer",
+   "category": "repair",
+   "title": "3D-Druck: Ersatzteile & Halterungen",
+   "body": "Abgebrochener Griff, fehlende Halterung? Ich drucke sie euch. Foto oder Maße per Nachricht.",
+   "author": "Yusuf",
+   "mosqueId": "winnenden",
+   "postedHoursAgo": 5,
+   "interest": 0,
+   "id": "p4"
+  },
+  {
+   "kind": "request",
+   "category": "transport",
+   "title": "Fahrgemeinschaft zum Freitagsgebet ab Urbach",
+   "body": "Ich habe kein Auto mehr und würde mich gern einer Fahrgemeinschaft nach Schorndorf anschließen.",
+   "author": "Hasan",
+   "mosqueId": "urbach",
+   "postedHoursAgo": 22,
+   "interest": 1,
+   "id": "p5"
+  },
+  {
+   "kind": "offer",
+   "category": "giveaway",
+   "title": "Kinderbett und Hochstuhl zu verschenken",
+   "body": "Gut erhalten, Abholung in Backnang.",
+   "author": "Elif",
+   "mosqueId": "backnang",
+   "postedHoursAgo": 75,
+   "interest": 3,
+   "id": "p6"
+  },
+  {
+   "kind": "request",
+   "category": "accompany",
+   "title": "Doktora refakat ve tercüme",
+   "body": "Annem için perşembe sabahı doktor randevusuna refakat ve tercüme edecek birini arıyorum.",
+   "author": "Fatma",
+   "mosqueId": "schorndorf",
+   "postedHoursAgo": 6,
+   "interest": 0,
+   "id": "p7"
+  },
+  {
+   "kind": "offer",
+   "category": "education",
+   "title": "Hausaufgabenhilfe Deutsch für Grundschüler",
+   "body": "Zwei Nachmittage pro Woche, in Waiblingen.",
+   "author": "Zeynep",
+   "mosqueId": "waiblingen",
+   "postedHoursAgo": 48,
+   "interest": 2,
+   "id": "p8"
+  },
+  {
+   "kind": "request",
+   "category": "repair",
+   "title": "Wer kann eine Waschmaschine anschließen?",
+   "body": "Neue Waschmaschine ist da, aber der Anschluss passt nicht. Wer kennt sich aus?",
+   "author": "Ali",
+   "mosqueId": "rudersberg",
+   "postedHoursAgo": 96,
+   "interest": 1,
+   "id": "p9"
+  },
+  {
+   "kind": "offer",
+   "category": "accompany",
+   "title": "Smartphone-Hilfe für Senioren",
+   "body": "WhatsApp, Fotos, Termine: Ich erkläre es in Ruhe, auf Deutsch oder Türkisch. Nach dem Mittagsgebet in der Teestube.",
+   "author": "Elif",
+   "mosqueId": "schorndorf",
+   "postedHoursAgo": 28,
+   "interest": 5,
+   "id": "p10"
+  },
+  {
+   "kind": "request",
+   "category": "moving",
+   "title": "Taşınma için yardım lazım (Cumartesi)",
+   "body": "Cumartesi günü 3. kattan eşya taşımak için 2–3 kişiye ihtiyacımız var.",
+   "author": "Murat",
+   "mosqueId": "backnang",
+   "postedHoursAgo": 12,
+   "interest": 2,
+   "id": "p11"
+  },
+  {
+   "kind": "offer",
+   "category": "other",
+   "title": "Gartenarbeit – helfe gern am Wochenende",
+   "body": "Hecke schneiden, Laub, Rasen. Für ältere Gemeindemitglieder gern ohne Gegenleistung.",
+   "author": "Burak",
+   "mosqueId": "welzheim",
+   "postedHoursAgo": 120,
+   "interest": 1,
+   "id": "p12"
+  }
+ ]
+}

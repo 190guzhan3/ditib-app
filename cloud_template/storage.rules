@@ -1,0 +1,15 @@
+rules_version = '2';
+
+// Bilder liegen unter users/{uid}/images/{name}; nur der Besitzer schreibt.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /users/{uid}/images/{fileName} {
+      allow read: if request.auth != null;
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+      allow delete: if request.auth != null && request.auth.uid == uid;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# Dateien, die NICHT in Git sollen:
+/build/
+/.dart_tool/
+/.packages
+/.pub-cache/
+/.pub/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+/ios/Flutter/Flutter.podspec
+/macos/Flutter/ephemeral/
+.env
+*.log
+
+# VS Code spezifisch
+.vscode/
+
+# Firebase CLI / Emulator
+firepit-log.txt
+*-debug.log
+ui-debug.log
+
+# Lokal generiert, aendert sich je Maschine
+.flutter-plugins-dependencies
+.flutter-plugins-dependencies 2
+
+# Node-Abhaengigkeiten der Firebase-Tests
+/firebase_tests/node_modules/
+
+# Enthaelt Zugangsdaten fuer die App-Review
+/review/
+/firebase_tests/seed/accounts.json
+
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+
+# Firebase-Konfiguration gehört zum jeweiligen App-Projekt, nicht in die Vorlage
+google-services.json
+GoogleService-Info.plist
+lib/firebase_options.dart
+*.backup
+
+# node-Pakete der Functions und Regeltests
+node_modules/

@@ -1,0 +1,142 @@
+rules_version = '2';
+
+// Grundregel: Jeder Nutzer liest und schreibt nur seine eigenen Daten.
+// Geteilte Daten liegen unter groups/{groupId}; Zugriff über den
+// Mitgliedseintrag groups/{groupId}/members/{uid} mit Rolle.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    // Felder und Größen prüfen, damit niemand beliebige Daten ablegt.
+    function isValidItem() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['id', 'title', 'note', 'done', 'imagePath', 'updatedAt'])
+        && d.title is string && d.title.size() <= 200
+        && (!('note' in d) || (d.note is string && d.note.size() <= 5000));
+    }
+
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+
+      match /items/{itemId} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid) && isValidItem();
+      }
+
+      // Push-Tokens der eigenen Geräte (NotificationService). Verschickt
+      // wird nur von Cloud Functions mit Admin-Rechten.
+      match /fcmTokens/{token} {
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid)
+          && request.resource.data.keys().hasOnly([
+            'token', 'platform', 'locale', 'utcOffsetMinutes', 'updatedAt'
+          ])
+          && request.resource.data.token == token;
+      }
+    }
+
+    // ---------------------------------------------------------------
+    // Gruppen (groups/{groupId}, Mitglieder mit Rolle owner/admin/member)
+    // Beitreten und Rollen ändern nur über Functions (redeemGroupInvite,
+    // setGroupRole). Gruppenfelder je App in isValidGroup ergänzen.
+    // ---------------------------------------------------------------
+    function memberDoc(groupId) {
+      return /databases/$(database)/documents/groups/$(groupId)/members/$(request.auth.uid);
+    }
+
+    function isGroupMember(groupId) {
+      return signedIn() && exists(memberDoc(groupId));
+    }
+
+    function isGroupAdmin(groupId) {
+      return isGroupMember(groupId)
+        && get(memberDoc(groupId)).data.role in ['owner', 'admin'];
+    }
+
+    function isGroupOwner(groupId) {
+      return isGroupMember(groupId)
+        && get(memberDoc(groupId)).data.role == 'owner';
+    }
+
+    function isValidGroup() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['name', 'ownerId', 'createdAt', 'blockedUserIds'])
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 100;
+    }
+
+    match /groups/{groupId} {
+      allow read: if isGroupMember(groupId);
+      // Anlegen: Gruppe und eigener Inhaber-Eintrag in einem Batch.
+      allow create: if signedIn()
+        && isValidGroup()
+        && request.resource.data.ownerId == request.auth.uid
+        && getAfter(memberDoc(groupId)).data.role == 'owner';
+      allow update: if isGroupAdmin(groupId)
+        && isValidGroup()
+        && request.resource.data.ownerId == resource.data.ownerId;
+      allow delete: if isGroupOwner(groupId);
+
+      match /members/{memberId} {
+        allow read: if isGroupMember(groupId);
+        // Nur der eigene Inhaber-Eintrag beim Anlegen der Gruppe.
+        allow create: if signedIn()
+          && memberId == request.auth.uid
+          && request.resource.data.role == 'owner'
+          && getAfter(/databases/$(database)/documents/groups/$(groupId)).data.ownerId == request.auth.uid
+          && !exists(/databases/$(database)/documents/groups/$(groupId));
+        // Austreten (nicht als Inhaber) oder von Admins entfernt werden.
+        allow delete: if signedIn()
+          && resource.data.role != 'owner'
+          && (memberId == request.auth.uid || isGroupAdmin(groupId));
+        // Rollen ändert nur setGroupRole.
+        allow update: if false;
+      }
+    }
+
+    match /groupInvites/{token} {
+      function isValidInvite(data) {
+        return data.keys().hasOnly([
+            'token', 'groupId', 'groupName', 'createdBy', 'createdAt',
+            'expiresAt', 'role', 'maxUses', 'useCount', 'revoked'
+          ])
+          && data.token == token
+          && token.matches('^[A-Za-z0-9]{22,64}$')
+          && data.groupId is string
+          && data.groupName is string
+          && data.createdBy == request.auth.uid
+          && data.createdAt == request.time
+          && data.expiresAt is timestamp
+          && data.expiresAt > request.time
+          && data.expiresAt <= request.time + duration.value(31, 'd')
+          && data.role in ['member', 'admin']
+          && (data.maxUses == null || (data.maxUses is int && data.maxUses >= 1 && data.maxUses <= 1000))
+          && data.useCount == 0
+          && data.revoked == false;
+      }
+
+      // Wer den Token kennt, darf die Einladung sehen (Vorschau im Dialog).
+      allow get: if signedIn();
+      allow list: if isGroupAdmin(resource.data.groupId);
+      // Admin-Einladungen darf nur der Inhaber erstellen.
+      allow create: if isValidInvite(request.resource.data)
+        && isGroupAdmin(request.resource.data.groupId)
+        && (request.resource.data.role == 'member'
+          || isGroupOwner(request.resource.data.groupId));
+      allow update: if isGroupAdmin(resource.data.groupId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['revoked'])
+        && request.resource.data.revoked == true;
+      allow delete: if isGroupAdmin(resource.data.groupId);
+    }
+
+    // Alles andere ist gesperrt.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
